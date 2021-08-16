@@ -1,0 +1,13 @@
+html {
+  background: #f4f5f5;
+  color: #333;
+}
+a {
+  color: #71777c;
+}
+#root {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}

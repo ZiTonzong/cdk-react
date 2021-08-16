@@ -1,0 +1,15 @@
+.text-center { /* 文本居中 */
+  text-align: center;
+}
+.show { /* 显示 */
+  display: inline-block;
+}
+.hide { /* 隐藏 */
+  display: none;
+}
+.hot {
+  color: red;
+}
+.purple {
+  color: #b71ed7;
+}
