@@ -20,10 +20,10 @@ const RightRecommend = Loadable({
 })
 
 class TimeLine extends Component {
-  constructor(props) {
-    super(props)
-    // this.backTop = this.backTop()
-  }
+  // constructor(props) {
+  //   super(props)
+  //   // this.backTop = this.backTop()
+  // }
 
   render() {
     return (

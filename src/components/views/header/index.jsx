@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import './index.css'
 import Logo from '../../../assets/img/logo.svg'
 import Search from '../../../assets/img/icon_search.svg'
+import HeadPortrait from '../../../assets/img/image_7.png'
 
 class Header extends Component {
   render() {
@@ -69,10 +70,7 @@ class Header extends Component {
 							<span>5.2K</span>
 						</Link>
 						<Link to="" className="header-container-user">
-							<img
-								src="https://leancloud-gold-cdn.xitu.io/GBwwQOuUmqYmWWnSp5EjY3HTouKn5fAd0Ly5XHkO?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1"
-								alt="头像"
-							/>
+							<img src={HeadPortrait} alt="头像" />
 						</Link>
 					</ul>
 				</div>

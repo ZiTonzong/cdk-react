@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import Thumbnail from '../../../assets/img/image_8.png'
 
 class LeftList extends Component {
 	render() {
@@ -81,10 +82,7 @@ class LeftList extends Component {
 								</button>
 							</div>
 						</div>
-						<img
-							src="https://user-gold-cdn.xitu.io/2019/2/14/168e9dad26638f40?imageView2/1/w/120/h/120/q/85/format/webp/interlace/1"
-							alt="缩略图"
-						/>
+						<img src={Thumbnail} alt="缩略图" />
 					</div>
 					<div className="left-list-item">
 						<div>
@@ -115,10 +113,7 @@ class LeftList extends Component {
 								</button>
 							</div>
 						</div>
-						<img
-							src="https://user-gold-cdn.xitu.io/2019/2/14/168e9dad26638f40?imageView2/1/w/120/h/120/q/85/format/webp/interlace/1"
-							alt="缩略图"
-						/>
+						<img src={Thumbnail} alt="缩略图" />
 					</div>
 					<div className="left-list-item">
 						<div>
@@ -149,10 +144,7 @@ class LeftList extends Component {
 								</button>
 							</div>
 						</div>
-						<img
-							src="https://user-gold-cdn.xitu.io/2019/2/14/168e9dad26638f40?imageView2/1/w/120/h/120/q/85/format/webp/interlace/1"
-							alt="缩略图"
-						/>
+						<img src={Thumbnail} alt="缩略图" />
 					</div>
 				</div>
 			</section>
