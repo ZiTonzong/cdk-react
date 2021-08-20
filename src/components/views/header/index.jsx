@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.css'
+import Logo from '../../../assets/img/logo.svg'
+import Search from '../../../assets/img/icon_search.svg'
 
 class Header extends Component {
   render() {

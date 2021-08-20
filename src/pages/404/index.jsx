@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '.index.css'
+import './index.css'
 import NotFountOne from '../../assets/img/404_not_found_1.png'
 import NotFountTwo from '../../assets/img/404_not_found_2.png'
 import NotFountThree from '../../assets/img/404_not_found_3.png'

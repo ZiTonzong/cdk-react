@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import { BrowserRouter, Redirect, Switch, Route } from 'react-router-dom';
+import Header from './components/views/header'
+import TimeLine from './pages/TimeLine'
+import NotFound from './pages/404'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <BrowserRouter>
+        <Header/>
+        <Switch>
+          <Redirect from="/" to="/timeline/recommend" exact></Redirect>
+          <Route path="/timeline/recommend" component={TimeLine}></Route>
+          <Route component={NotFound}></Route>
+        </Switch>
+      </BrowserRouter>
+    </Fragment>
   );
 }
 
