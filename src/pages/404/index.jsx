@@ -6,6 +6,10 @@ import NotFountThree from '../../assets/img/404_not_found_3.png'
 import NotFountFour from '../../assets/img/404_not_found_4.png'
 
 class NotFound extends Component {
+	// constructor(props) {
+	// 	super(props)
+	// }
+
 	render() {
 		return (
 			<div className="not-found">
@@ -31,9 +35,16 @@ class NotFound extends Component {
 						alt="查找不到页面"
 					/>
 				</div>
-        <button className="go-home">回到首页</button>
+				<button className="go-home" onClick={this.gotoIndex}>
+					回到首页
+				</button>
 			</div>
 		)
+	}
+
+	gotoIndex = () => {
+		// alert('sss')
+		this.props.history.push('/')
 	}
 }
 

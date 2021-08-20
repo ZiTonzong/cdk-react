@@ -55,7 +55,7 @@ class LeftList extends Component {
 				<div>
 					<div className="left-list-item">
 						<div>
-							<Link to="/post">
+							<Link to="/article">
 								<div className="left-list-item-detail">
 									<span className="hot">热</span>
 									<span className="left-list-item-split">.</span>
@@ -86,7 +86,7 @@ class LeftList extends Component {
 					</div>
 					<div className="left-list-item">
 						<div>
-							<Link to="/post">
+							<Link to="/article">
 								<div className="left-list-item-detail">
 									<span className="hot">热</span>
 									<span className="left-list-item-split">.</span>
@@ -117,7 +117,7 @@ class LeftList extends Component {
 					</div>
 					<div className="left-list-item">
 						<div>
-							<Link to="/post">
+							<Link to="/article">
 								<div className="left-list-item-detail">
 									<span className="hot">热</span>
 									<span className="left-list-item-split">.</span>

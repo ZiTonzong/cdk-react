@@ -20,6 +20,7 @@ header {
 }
 /* Logo 图标 */
 .header-container-logo {
+  cursor: pointer;
   width: 98px;
   height: 41px;
   margin-right: 24px;
