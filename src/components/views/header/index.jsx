@@ -1,17 +1,24 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import './index.css'
 import Logo from '../../../assets/img/logo.svg'
 import Search from '../../../assets/img/icon_search.svg'
 import HeadPortrait from '../../../assets/img/image_7.png'
-import { useHistory } from 'react-router-dom'
+import { useHistory, useLocation } from 'react-router-dom'
 
 function Header() {
 	const history = useHistory()
+	const location = useLocation()
+
 	const gotoIndex = () => {
 		// console.log('this.props', this)
 		history.push('/')
 	}
+
+	useEffect(() => {
+		// 需要在 componentDidMount 执行的内容
+		console.log('location', location)
+	}, [location])
 
 	return (
 		<header>
