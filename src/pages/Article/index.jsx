@@ -1,59 +1,88 @@
 import React, { Component } from 'react'
 import './index.scss'
 import Button from '../../components/button/Button'
+import Cascader from '../../components/cascader/Cascader'
+
+const options = [
+	{
+		value: 'zhejiang',
+		label: 'Zhejiang',
+		children: [
+			{
+				value: 'hangzhou',
+				label: 'Hangzhou',
+				children: [
+					{
+						value: 'xihu',
+						label: 'West Lake',
+					},
+				],
+			},
+		],
+	},
+	{
+		value: 'jiangshu',
+		label: 'Jiangshu',
+		children: [
+			{
+				value: 'nanjing',
+				label: 'Nanjing',
+				disabled: true,
+				children: [
+					{
+						value: 'jiangning',
+						label: 'Jiangning',
+					},
+				],
+			},
+		],
+	},
+	{
+		value: 'shanghai',
+		label: 'Shanghai',
+		children: [
+			{
+				value: 'pudong',
+				label: 'Pudong',
+				children: [
+					{
+						value: 'lujiazhui',
+						label: 'Lujiazhui',
+					},
+				],
+			},
+		],
+	},
+]
 
 class Article extends Component {
 	constructor() {
 		super()
 		// this.type = 'success'
 		this.state = {
-			type: 'success'
+			type: 'success',
 		}
 	}
 
 	setType = (value) => {
 		// this.type = value
 		console.log('value', value)
-		this.setState({type: value})
+		this.setState({ type: value })
 	}
 
+	handleChange = () => {}
+
+	handleSelect = () => {}
+
 	render() {
-		// setTimeout(() => {
-		// 	this.setType('cdk')
-		// }, 3000)
 		return (
 			<div className="article">
-				<div>{this.state.type}</div>
-				<Button type={this.state.type} setType={this.setType}>
-					sssa
-				</Button>
-				<div className="article__left-panel">
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>分享</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-					<div>
-						<i className="icon icon-notice"></i>
-					</div>
-				</div>
-				<div className="article__main">
-					<div>dd</div>
-				</div>
+				<Cascader
+					options={options}
+					placeholder="cascader"
+					onChange={this.handleChange}
+					onSelect={this.handleSelect}
+				/>
 			</div>
 		)
 	}

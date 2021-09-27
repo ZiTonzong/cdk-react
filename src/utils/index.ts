@@ -1,4 +1,4 @@
-import classes from "./classes";
+import classes from "./classes.ts";
 
 export {
   classes

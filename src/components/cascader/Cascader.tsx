@@ -1,6 +1,6 @@
 import * as PropTypes from 'prop-types'
 import * as React from 'react'
-import { classes } from '../../utils'
+import { classes } from '../../utils/index'
 import CascaderMenu from './CascaderMenu'
 import Icon from '../icon/Icon'
 import './style'
@@ -13,7 +13,7 @@ export interface Option {
 }
 
 export interface CasecaderProps {
-	option: Option[]
+	options: Option[]
 	placeholder?: string
 	changeOnSelect?: boolean
 	itemClassName?: string
@@ -103,7 +103,7 @@ class Cascader extends React.Component<CasecaderProps, CascaderState> {
 		})
 	}
 
-	public handleChangeClick = (option: Option, level: number) => {
+	public handleChangeValue = (option: Option, level: number) => {
 		// 最后一级
 		if (!option.children) {
 			this.handleClickLastLevel(option, level)
@@ -242,7 +242,11 @@ class Cascader extends React.Component<CasecaderProps, CascaderState> {
 					<input
 						type="text"
 						className={classes(cn, 'input', [className])}
-					></input>
+						style={style}
+						readOnly={true}
+						onClick={this.handleClickInput}
+						value={inputValueFromLabel}
+					/>
 					<span className={classes(cn, 'icon-wrapper', ['arrow'])}>
 						<Icon name="arrow" size={8}></Icon>
 					</span>

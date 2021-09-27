@@ -99,31 +99,36 @@ class CascaderMenu extends React.Component<
 		return (
 			<>
 				<ul className={classes(cn, '')}>
-					{options.map((option) => {
+					{options.map((option) => (
 						<li
 							className={classes(cn, 'item', [itemClassName], {
 								selected: valueArr && valueArr.indexOf(option.value) > -1,
-                'has-children': option.children && option.children.length,
-                disabled: option.disabled
+								'has-children': option.children && option.children.length,
+								disabled: option.disabled,
 							})}
-              style={itemStyle}
-              key={option.value}
-              onClick={() => this.handleClickItem(option)}
+							style={itemStyle}
+							key={option.value}
+							onClick={() => this.handleClickItem(option)}
 						>
-              {option.label}
-              {option.children && option.children.length && (
-                <span className={classes(cn, 'item-icon-wrapper')}>
-                  <Icon name="arrow" size={8}></Icon>
-                </span>
-              )}
-            </li>
-					})}
+							{option.label}
+							{option.children && option.children.length && (
+								<span className={classes(cn, 'item-icon-wrapper')}>
+									<Icon name="arrow" size={8}></Icon>
+								</span>
+							)}
+						</li>
+					))}
 				</ul>
-				{
-					currentOption?.children?.length && (
-						<CascaderMenu options={currentOption.children} level={level + 1} handleChangeValue={handleChangeValue} valueArr={valueArr} itemClassName={itemClassName} itemStyle={itemStyle}></CascaderMenu>
-					)
-				}
+				{currentOption?.children?.length && (
+					<CascaderMenu
+						options={currentOption.children}
+						level={level + 1}
+						handleChangeValue={handleChangeValue}
+						valueArr={valueArr}
+						itemClassName={itemClassName}
+						itemStyle={itemStyle}
+					></CascaderMenu>
+				)}
 			</>
 		)
 	}
