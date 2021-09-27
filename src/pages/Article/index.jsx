@@ -58,14 +58,12 @@ const options = [
 class Article extends Component {
 	constructor() {
 		super()
-		// this.type = 'success'
 		this.state = {
 			type: 'success',
 		}
 	}
 
 	setType = (value) => {
-		// this.type = value
 		console.log('value', value)
 		this.setState({ type: value })
 	}

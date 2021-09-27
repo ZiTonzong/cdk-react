@@ -11,8 +11,8 @@ function App() {
 			<BrowserRouter>
 				<Header />
 				<Switch>
-					<Redirect from="/" to="/timeline/recommend" exact></Redirect>
-					<Route path="/timeline/recommend" component={TimeLine}></Route>
+					<Redirect from="/" to="/index" exact></Redirect>
+					<Route path="/index" component={TimeLine}></Route>
 					<Route path="/article" component={Article}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>

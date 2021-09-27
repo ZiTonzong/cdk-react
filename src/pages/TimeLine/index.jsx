@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './index.css'
+import './index.scss'
 import Loadable from 'react-loadable'
 
 const Loading = () => <div>Loading...</div>
@@ -27,13 +27,14 @@ class TimeLine extends Component {
 
   render() {
     return (
-      <div className="timeline">
-        <Nav/>
-        <div className="timeline-container">
+      <div className="timeline-container">
+        <div>组件展示</div>
+        {/* <Nav/> */}
+        {/* <div className="timeline-container">
           <LeftList/>
           <RightRecommend/>
         </div>
-        <button className="scroll-to-top" onClick={this.backTop}>返回顶部</button>
+        <button className="scroll-to-top" onClick={this.backTop}>返回顶部</button> */}
       </div>
     )
   }
