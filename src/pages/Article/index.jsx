@@ -77,7 +77,7 @@ class Article extends Component {
 			<div className="article">
 				<Cascader
 					options={options}
-					placeholder="cascader"
+					placeholder="love-ling-ling"
 					onChange={this.handleChange}
 					onSelect={this.handleSelect}
 				/>
