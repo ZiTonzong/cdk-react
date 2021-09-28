@@ -21,14 +21,9 @@ function Header() {
 
 	return (
 		<header className="header">
-			<div className="header__left">
+			<div className="header__left" onClick={gotoIndex}>
 				<div className="header__logo">
-					<img
-						className="header-container-logo"
-						alt="Logo"
-						src={Logo}
-						onClick={gotoIndex}
-					/>
+					<img className="header-container-logo" alt="Logo" src={Logo} />
 				</div>
 				<div className="header__title">
 					<span className="header__title--me">cdk</span>-react

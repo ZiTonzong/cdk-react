@@ -4,6 +4,7 @@ import Header from './components/views/header'
 import TimeLine from './pages/TimeLine'
 import NotFound from './pages/404'
 import Article from './pages/Article'
+import ButtonDemo from './pages/Article/ButtonDemo'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 					<Redirect from="/" to="/index" exact></Redirect>
 					<Route path="/index" component={TimeLine}></Route>
 					<Route path="/cascader-demo" component={Article}></Route>
+					<Route path="/button-demo" component={ButtonDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

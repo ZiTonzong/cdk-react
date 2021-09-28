@@ -31,13 +31,17 @@ function TimeLine() {
 		console.log(document)
 	}
 
+	const goButtonDemo = () => {
+		history.push('/button-demo')
+	}
+
 	return (
 		<div className="timeline">
 			<div className="timeline-container">
 				<div className="timeline__sub-title">组件展示</div>
 				<ul className="timeline__ul">
 					<li onClick={goCascaderDemo}>级联组件 Demo</li>
-					<li>xx</li>
+					<li onClick={goButtonDemo}>Button 组件 Demo</li>
 					<li>xx</li>
 				</ul>
 				{/* <Nav/> */}
