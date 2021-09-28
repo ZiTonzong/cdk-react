@@ -53,7 +53,7 @@ class Cascader extends React.Component<CasecaderProps, CascaderState> {
 		changeOnSelect: PropTypes.bool,
 	}
 
-	private cascaderEl: HTMLDivElement
+	private cascaderEl!: HTMLDivElement
 
 	constructor(props: CasecaderProps) {
 		super(props)

@@ -55,10 +55,10 @@ class Unfold extends React.Component<UnfoldProps> {
 		transitionTime: PropTypes.number,
 	}
 
-	private node: HTMLElement
+	private node!: HTMLElement
 	private monitored: boolean = false
 	private nodeDisplay: any
-	private rendered: boolean
+	private rendered!: boolean
 	private transitionEffect: TransitionEffect = {
 		vertical: '',
 		horizontal: '',

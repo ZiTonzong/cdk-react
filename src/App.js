@@ -11,9 +11,9 @@ function App() {
 			<BrowserRouter>
 				<Header />
 				<Switch>
-					<Redirect from="/" to="/timeline/recommend" exact></Redirect>
-					<Route path="/timeline/recommend" component={TimeLine}></Route>
-					<Route path="/article" component={Article}></Route>
+					<Redirect from="/" to="/index" exact></Redirect>
+					<Route path="/index" component={TimeLine}></Route>
+					<Route path="/cascader-demo" component={Article}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

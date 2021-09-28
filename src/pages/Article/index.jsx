@@ -58,14 +58,12 @@ const options = [
 class Article extends Component {
 	constructor() {
 		super()
-		// this.type = 'success'
 		this.state = {
 			type: 'success',
 		}
 	}
 
 	setType = (value) => {
-		// this.type = value
 		console.log('value', value)
 		this.setState({ type: value })
 	}
@@ -79,7 +77,7 @@ class Article extends Component {
 			<div className="article">
 				<Cascader
 					options={options}
-					placeholder="cascader"
+					placeholder="love-ling-ling"
 					onChange={this.handleChange}
 					onSelect={this.handleSelect}
 				/>
