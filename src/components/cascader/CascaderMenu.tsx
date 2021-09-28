@@ -43,7 +43,7 @@ class CascaderMenu extends React.Component<
 	public static getDerivedStateFromProps(
 		nextProps: CascaderMenuProps,
 		prevState: CascaderMenuState
-	): Object {
+	) {
 		// 未选中任何一项
 		if (!nextProps.valueArr) {
 			return {
