@@ -1,7 +1,5 @@
-import classes from "./classes";
+import classes from './classes'
 import Wave from './Wave'
+import calculatePagerPages from './calculatePagerPages'
 
-export {
-  classes,
-  Wave
-}
+export { classes, Wave, calculatePagerPages }
