@@ -5,6 +5,7 @@ import TimeLine from './pages/TimeLine'
 import NotFound from './pages/404'
 import Article from './pages/Article'
 import ButtonDemo from './pages/Article/ButtonDemo'
+import PagerDemo from './pages/Article/PagerDemo'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 					<Route path="/index" component={TimeLine}></Route>
 					<Route path="/cascader-demo" component={Article}></Route>
 					<Route path="/button-demo" component={ButtonDemo}></Route>
+					<Route path="/pager-demo" component={PagerDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

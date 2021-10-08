@@ -164,10 +164,10 @@ class Pager extends React.Component<PagerProps, PagerState> {
 					className={classes(cn, 'num', {
 						disabled: derivedCurrent >= derivedTotal,
 					})}
-          onClick={() => this.handleSkip(1)}
+					onClick={() => this.handleSkip(1)}
 				>
-          <Icon name="arrow" className={classes(cn, 'icon')} size={10}></Icon>
-        </li>
+					<Icon name="arrow" className={classes(cn, 'icon')} size={10}></Icon>
+				</li>
 			</ul>
 		)
 	}

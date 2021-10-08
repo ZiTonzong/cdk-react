@@ -1,24 +1,24 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './index.scss'
-import Loadable from 'react-loadable'
+// import Loadable from 'react-loadable'
 import { useHistory } from 'react-router-dom'
 
-const Loading = () => <div>Loading...</div>
+// const Loading = () => <div>Loading...</div>
 
-const Nav = Loadable({
-	loader: () => import('./components/Nav'),
-	loading: Loading,
-})
+// const Nav = Loadable({
+// 	loader: () => import('./components/Nav'),
+// 	loading: Loading,
+// })
 
-const LeftList = Loadable({
-	loader: () => import('./components/LeftList'),
-	loading: Loading,
-})
+// const LeftList = Loadable({
+// 	loader: () => import('./components/LeftList'),
+// 	loading: Loading,
+// })
 
-const RightRecommend = Loadable({
-	loader: () => import('./components/RightRecommend'),
-	loading: Loading,
-})
+// const RightRecommend = Loadable({
+// 	loader: () => import('./components/RightRecommend'),
+// 	loading: Loading,
+// })
 
 function TimeLine() {
 	const history = useHistory()
@@ -27,12 +27,16 @@ function TimeLine() {
 		history.push('/cascader-demo')
 	}
 
-	const backTop = () => {
-		console.log(document)
-	}
+	// const backTop = () => {
+	// 	console.log(document)
+	// }
 
 	const goButtonDemo = () => {
 		history.push('/button-demo')
+	}
+
+	const goPagerDemo = () => {
+		history.push('/pager-demo')
 	}
 
 	return (
@@ -42,6 +46,7 @@ function TimeLine() {
 				<ul className="timeline__ul">
 					<li onClick={goCascaderDemo}>级联组件 Demo</li>
 					<li onClick={goButtonDemo}>Button 组件 Demo</li>
+					<li onClick={goPagerDemo}>Pager 组件 Demo</li>
 					<li>xx</li>
 				</ul>
 				{/* <Nav/> */}
