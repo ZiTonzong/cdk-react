@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# cdk-react
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+采用 React 脚手架 create-react-app 构建的一套 React 组件库，用于个人学习 React 框架使用。
 
 ## Available Scripts
 
