@@ -39,6 +39,10 @@ function TimeLine() {
 		history.push('/pager-demo')
 	}
 
+	const goInputDemo = () => {
+		history.push('/input-demo')
+	}
+
 	return (
 		<div className="timeline">
 			<div className="timeline-container">
@@ -47,6 +51,7 @@ function TimeLine() {
 					<li onClick={goCascaderDemo}>级联组件 Demo</li>
 					<li onClick={goButtonDemo}>Button 组件 Demo</li>
 					<li onClick={goPagerDemo}>Pager 组件 Demo</li>
+					<li onClick={goInputDemo}>Input 组件 Demo</li>
 					<li>xx</li>
 				</ul>
 				{/* <Nav/> */}

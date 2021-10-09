@@ -6,6 +6,7 @@ import NotFound from './pages/404'
 import Article from './pages/Article'
 import ButtonDemo from './pages/Article/ButtonDemo'
 import PagerDemo from './pages/Article/PagerDemo'
+import InputDemo from './pages/Article/InputDemo'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path="/cascader-demo" component={Article}></Route>
 					<Route path="/button-demo" component={ButtonDemo}></Route>
 					<Route path="/pager-demo" component={PagerDemo}></Route>
+					<Route path="/input-demo" component={InputDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

@@ -53,9 +53,9 @@ class Input extends React.Component<InputProps, InputState> {
 		addonAfter: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 		prefix: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
 		suffix: PropTypes.oneOfType([PropTypes.string, PropTypes.element]),
-		disabled: PropTypes.string,
-		error: PropTypes.string,
-		readonly: PropTypes.string,
+		disabled: PropTypes.bool,
+		error: PropTypes.bool,
+		readonly: PropTypes.bool,
 	}
 
 	public static getDerivedStateFromProps(
