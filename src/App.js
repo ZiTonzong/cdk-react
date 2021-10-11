@@ -7,6 +7,7 @@ import Article from './pages/Article'
 import ButtonDemo from './pages/Article/ButtonDemo'
 import PagerDemo from './pages/Article/PagerDemo'
 import InputDemo from './pages/Article/InputDemo'
+import SpinDemo from './pages/Article/SpinDemo'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path="/button-demo" component={ButtonDemo}></Route>
 					<Route path="/pager-demo" component={PagerDemo}></Route>
 					<Route path="/input-demo" component={InputDemo}></Route>
+					<Route path="/spin-demo" component={SpinDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>
