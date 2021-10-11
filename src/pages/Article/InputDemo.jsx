@@ -10,6 +10,7 @@ class InputDemo extends Component {
 		this.state = {
 			// current: 20,
 			inputValue: 93232,
+			textareaValue: 1999
 		}
 	}
 
@@ -24,6 +25,12 @@ class InputDemo extends Component {
 	handleSearch = (value) => {
 		console.log('value', value)
 	}
+
+	handleChange2 = (e) => {
+    this.setState({
+			textareaValue: e.target.value
+		})
+  }
 
 	render() {
 		return (
@@ -87,7 +94,8 @@ class InputDemo extends Component {
 					<Textarea
 						autosize={true}
 						placeholder="autosize"
-						onChange={this.handleChange}
+						onChange={this.handleChange2}
+						value={this.state.textareaValue + ''}
 					/>
 				</div>
 			</div>

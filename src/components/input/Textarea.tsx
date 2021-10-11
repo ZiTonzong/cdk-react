@@ -92,7 +92,7 @@ class Textarea extends React.Component<TextareaProps, TextareaState> {
 
 	public handleKeyDown: React.KeyboardEventHandler = (e) => {
 		const { onPressEnter } = this.props
-		if (e.keyCode === 13 && onPressEnter) {
+		if (e.key === 'Enter' && onPressEnter) {
 			onPressEnter(e)
 		}
 	}
