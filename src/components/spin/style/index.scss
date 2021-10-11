@@ -1,0 +1,61 @@
+@import '../../../styles/mixins.scss';
+@keyframes cdk-spin {
+	from {
+		transform: rotateZ(0);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+.cdk-spin-wrapper {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	&.with-children {
+		display: block;
+		position: relative;
+	}
+	.cdk-spin-mask {
+		position: absolute;
+		z-index: 100;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		pointer-events: none;
+		transition: background-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+		background-color: transparent;
+		display: none;
+		&.spinning {
+			pointer-events: all;
+			background-color: rgba(255, 255, 255, 0.7);
+		}
+		&.active {
+			display: block;
+		}
+	}
+	.cdk-spin-container {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		&.with-children {
+			position: absolute;
+			z-index: 100;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+		&.with-tip {
+			flex-direction: column;
+		}
+		.cdk-spin {
+			animation: cdk-spin 1.2s linear infinite;
+		}
+		.cdk-spin-tip {
+			font-size: 14px;
+			line-height: 22px;
+			color: $brand;
+			margin-top: 5px;
+		}
+	}
+}
