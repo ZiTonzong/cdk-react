@@ -8,6 +8,9 @@ import ButtonDemo from './pages/Article/ButtonDemo'
 import PagerDemo from './pages/Article/PagerDemo'
 import InputDemo from './pages/Article/InputDemo'
 import SpinDemo from './pages/Article/SpinDemo'
+import TableDemo from './pages/AntDesignDemo/TableDemo'
+import FormDemo from './pages/AntDesignDemo/FormDemo'
+import 'antd/dist/antd.css'
 
 function App() {
   return (
@@ -22,6 +25,8 @@ function App() {
 					<Route path="/pager-demo" component={PagerDemo}></Route>
 					<Route path="/input-demo" component={InputDemo}></Route>
 					<Route path="/spin-demo" component={SpinDemo}></Route>
+					<Route path="/antDesign/table-demo" component={TableDemo}></Route>
+					<Route path="/antDesign/form-demo" component={FormDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

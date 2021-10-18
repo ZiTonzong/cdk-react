@@ -61,6 +61,12 @@ function TimeLine() {
 					<li onClick={() => gotoPage('/pager-demo')}>Pager 组件 Demo</li>
 					<li onClick={() => gotoPage('/input-demo')}>Input 组件 Demo</li>
 					<li onClick={() => gotoPage('/spin-demo')}>Spin 组件 Demo</li>
+					<li onClick={() => gotoPage('/antDesign/table-demo')}>
+						(AntDesign) Table 组件 Demo
+					</li>
+					<li onClick={() => gotoPage('/antDesign/form-demo')}>
+						(AntDesign) Form 组件 Demo
+					</li>
 					<li>xx</li>
 				</ul>
 				{/* <Nav/> */}
