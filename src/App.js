@@ -10,6 +10,7 @@ import InputDemo from './pages/Article/InputDemo'
 import SpinDemo from './pages/Article/SpinDemo'
 import TableDemo from './pages/AntDesignDemo/TableDemo'
 import FormDemo from './pages/AntDesignDemo/FormDemo'
+import MyTableDemo from './pages/Article/TableDemo'
 import 'antd/dist/antd.css'
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
 					<Route path="/spin-demo" component={SpinDemo}></Route>
 					<Route path="/antDesign/table-demo" component={TableDemo}></Route>
 					<Route path="/antDesign/form-demo" component={FormDemo}></Route>
+					<Route path="/table-demo" component={MyTableDemo}></Route>
 					<Route component={NotFound}></Route>
 				</Switch>
 			</BrowserRouter>

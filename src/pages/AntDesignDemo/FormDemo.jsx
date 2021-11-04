@@ -10,13 +10,18 @@ const FormDemo = () => {
 		console.log('Failed:', errorInfo)
 	}
 
-	const [userName, setUserName] = useState('232')
+	const [userName, setUserName] = useState('23211')
+	const [password, setPassword] = useState('12444')
 
 	const changeValue = (e) => {
 		console.log('e', e.target.value)
 		setUserName(e.target.value)
 
 		console.log('userName', userName)
+	}
+
+	const onValuesChange = (value) => {
+		console.log('onValuesChange', value)
 	}
 
 	return (
@@ -30,12 +35,14 @@ const FormDemo = () => {
 					wrapperCol={{
 						span: 16,
 					}}
-					initialValues={{
-						remember: true,
-					}}
 					onFinish={onFinish}
 					onFinishFailed={onFinishFailed}
 					autoComplete="off"
+					initialValues={{
+						username: userName,
+						password,
+					}}
+					onValuesChange={onValuesChange}
 				>
 					<Form.Item
 						label="Username"
@@ -47,7 +54,7 @@ const FormDemo = () => {
 							},
 						]}
 					>
-						<Input value={userName}/>
+						<Input />
 					</Form.Item>
 
 					<Form.Item

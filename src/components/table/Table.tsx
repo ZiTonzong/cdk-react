@@ -908,3 +908,5 @@ class Table extends React.Component<TableProps, TableState> {
 		)
 	}
 }
+
+export default Table
